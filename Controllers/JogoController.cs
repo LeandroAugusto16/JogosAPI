@@ -14,8 +14,8 @@ namespace Controllers
         // Lista para armazenar jogos. (Em um projeto real, isso seria um banco de dados.)
         private static List<Jogo> jogos = new List<Jogo>
         {
-            new Jogo { Id = 1, Nome = "The Witcher 3", Plataforma = "PC", Descricao = "Jogo de RPG de mundo aberto.", DataLancamento = new DateTime(2015, 5, 19) },
-            new Jogo { Id = 2, Nome = "Hollow Knight", Plataforma = "Nintendo Switch", Descricao = "Metroidvania com elementos de exploração.", DataLancamento = new DateTime(2017, 2, 24) }
+            new Jogo { Id = 1, Nome = "DarK Souls 3", Plataforma = "PC", Descricao = "Jogo de RPG.", DataLancamento = new DateTime(2016, 3, 24) },
+            new Jogo { Id = 2, Nome = "Hollow Knight", Plataforma = "Nintendo Switch", Descricao = "Metroidvania de plataforma.", DataLancamento = new DateTime(2017, 2, 24) }
         };
         [HttpGet]
         public ActionResult<IEnumerable<Jogo>> Get()
