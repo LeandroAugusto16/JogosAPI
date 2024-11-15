@@ -15,7 +15,9 @@ namespace Controllers
         private static List<Jogo> jogos = new List<Jogo>
         {
             new Jogo { Id = 1, Nome = "DarK Souls 3", Plataforma = "PC", Descricao = "Jogo de RPG.", DataLancamento = new DateTime(2016, 3, 24) },
-            new Jogo { Id = 2, Nome = "Hollow Knight", Plataforma = "Nintendo Switch", Descricao = "Metroidvania de plataforma.", DataLancamento = new DateTime(2017, 2, 24) }
+            new Jogo { Id = 2, Nome = "Hollow Knight", Plataforma = "Nintendo Switch", Descricao = "Metroidvania de plataforma.", DataLancamento = new DateTime(2017, 2, 24) },
+            new Jogo { Id = 3, Nome = "Life is Strange", Plataforma = "PC", Descricao = "Jogo sobre escolhas e a vida.", DataLancamento = new DateTime(2015, 1, 29) },
+            new Jogo { Id = 4, Nome = "Bloodborne", Plataforma = "PS4", Descricao = "RPG de suspense.", DataLancamento = new DateTime(2015, 3, 24) }
         };
         [HttpGet]
         public ActionResult<IEnumerable<Jogo>> Get()
